@@ -1,11 +1,10 @@
-<!-- app/views/game/scissors.html.erb -->
+
 <h1>Rock, Paper, Scissors</h1>
-<p>You chose: <%= @user_choice %></p>
-<p>Computer chose: <%= @computer_choice %></p>
-<p>Result: You <%= @result %>!</p>
+<p>You chose: <%= @user_choice.capitalize %></p>
+<p>They played <%= @computer_choice.capitalize %></p>
+<p>Result: We <%= @result %>!</p>
 
 <a href="/">Rules</a><br>
 <a href="/rock">Play Rock</a><br>
 <a href="/paper">Play Paper</a><br>
 <a href="/scissors">Play Scissors</a><br>
-
