@@ -24,11 +24,11 @@ class GameController < ApplicationController
   private
 
   def determine_winner(user, computer)
-    return "We tie" if user == computer
-    return "We win" if (user == "rock" && computer == "scissors") ||
+    # Returning the result directly as "We tied", "We won", or "We lost"
+    return "We tied" if user == computer
+    return "We won" if (user == "rock" && computer == "scissors") ||
                        (user == "paper" && computer == "rock") ||
                        (user == "scissors" && computer == "paper")
-    "We lose"
+    "We lost"
   end
 end
-
